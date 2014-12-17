@@ -1,35 +1,33 @@
-# Path to your oh-my-zsh installation.
+#   PATHS
 export ZSH=$HOME/.dotfiles/zsh/
-# Needed for .zshrc
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/lib/python2.7/site-packages:/usr/local/share/npm/bin"
 
+#   THEMES
 ZSH_THEME="mh"
 
-# Plugins 
+#   PLUGINS
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# PATH 
-export PATH="/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/lib/python2.7/site-packages:/usr/local/share/npm/bin"
-
-# Preferred editor for local and remote sessions
+#   SSH
+export SSH_KEY_PATH="~/.ssh/dsa_id"
 if [[ -n $SSH_CONNECTION ]]; then
 	export EDITOR='vim'
 else
 	export EDITOR='mvim'
 fi
 
-# ssh
- export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Aliases
+#   ALIASES
 alias subl="~/bin/subl"
 alias p="python $1"
 alias ga"git add . -A"
 alias gph="git push heroku master"
 alias sl="ls"
 alias gc="git commit -m $1"
+alias gs="git status"
 alias gp="git push -u origin master"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
@@ -38,6 +36,8 @@ alias brewup="sh ~/bin/brewup.sh"
 alias cdpw="cd ~/Documents/devanp92.github.com/"
 alias vz="vim ~/.zshrc"
 alias vv="vim ~/.vimrc"
+
+# FUNCTIONS
 
 # Get a password from Mac Keychain
 function get-pass() {
@@ -80,4 +80,9 @@ function aes-dec() {
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 eval "$(rbenv init -)"
 
-source ~/.zshrc
+# copy to .vim dir
+if ! diff -q ~/.zshrc ~/.vim/.zshrc > /dev/null ; 
+then 
+    rm ~/.vim/.zshrc 
+    cp ~/.zshrc ~/.vim/
+fi
