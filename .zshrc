@@ -1,7 +1,6 @@
 #   PATHS
 export ZSH=$HOME/.dotfiles/zsh/
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/lib/python2.7/site-packages:/usr/local/share/npm/bin"
+export PATH="/bin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/lib/python2.7/site-packages:/usr/local/share/npm/bin:$HOME/.rbenv/bin"
 
 #   THEMES
 ZSH_THEME="mh"
