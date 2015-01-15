@@ -1,0 +1,16 @@
+[user]
+	name = Devan Patel
+	email = devanppatel92@gmail.com
+[core]
+	editor = vim
+	excludesfile = /Users/devan/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Devan/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = matching
+[credential]
+	helper = osxkeychain
