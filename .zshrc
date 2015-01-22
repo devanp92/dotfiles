@@ -1,5 +1,5 @@
 #   PATHS
-export ZSH=$HOME/.dotfiles/zsh/
+export ZSH=$HOME/.zsh
 export PATH="/bin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/lib/python2.7/site-packages:/usr/local/share/npm/bin:$HOME/.rbenv/bin"
 
 #   THEMES
@@ -30,7 +30,7 @@ alias gs="git status"
 alias gp="git push -u origin master"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias cddoc="cd /Users/devan/Documents/school/school_14-15/sp15"
+alias cddoc="cd /Users/devan/Documents/school/14-15/sp15"
 alias brewup="sh ~/bin/brewup.sh"
 alias cdpw="cd ~/Documents/devanp92.github.com/"
 alias vz="vim ~/.zshrc"
@@ -79,9 +79,9 @@ function aes-dec() {
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 eval "$(rbenv init -)"
 
-# copy to .vim dir
-if ! diff -q ~/.zshrc ~/.vim/.zshrc > /dev/null ; 
+# copy to .dotfiles dir
+if ! diff -q ~/.zshrc ~/.dotfiles/.zshrc > /dev/null ; 
 then 
-    rm ~/.vim/.zshrc 
-    cp ~/.zshrc ~/.vim/
+    rm ~/.dotfiles/.zshrc 
+    cp ~/.zshrc ~/.dotfiles/
 fi
