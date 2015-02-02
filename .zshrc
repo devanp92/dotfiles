@@ -32,10 +32,10 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias cddoc="cd /Users/devan/Documents/school/14-15/sp15"
 alias brewup="sh ~/bin/brewup.sh"
-alias cdpw="cd ~/Documents/devanp92.github.com/"
+alias cdpw="cd ~/Documents/personal_website/static"
 alias vz="vim ~/.zshrc"
 alias vv="vim ~/.vimrc"
-
+alias npm="sudo npm"
 # FUNCTIONS
 
 # Get a password from Mac Keychain
