@@ -37,7 +37,7 @@ bower install -g angular bootstrap font-awesome angular-strap
 
 # mongodb-as-a-service on startup and right now
 ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
+# launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
 
 # chrome
 brew cask install google-chrome
