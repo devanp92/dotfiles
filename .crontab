@@ -1,0 +1,1 @@
+@hourly ~/bin/brewup.sh > /dev/null 2>&1
