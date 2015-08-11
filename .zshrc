@@ -43,12 +43,10 @@ alias p="python $1"
 alias ga"git add . -A"
 alias gph="git push heroku master"
 alias sl="ls"
-alias cm="git add -A && git commit -m"
+alias cm="git add . -A && git commit -m"
 alias gc="git commit -m $1"
 alias gs="git status"
 alias gp="git push -u origin master"
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
 alias cddoc="cd /Users/devan/Documents/school/14-15/su15"
 alias cdsp="cd /Users/devan/Documents/school/14-15/sp15/senior_project/senior_website"
 alias szh="source ~/.zshrc"
@@ -60,7 +58,6 @@ alias npm="sudo npm"
 alias rr="rm -fr"
 alias wifipass="security find-generic-password -g -D \"AirPort network password\" -a"
 alias vagus="cd ~/Programming/vagrant;vagrant up;vagrant ssh"
-
 
 compinit -D dumpfile
 # FUNCTIONS
