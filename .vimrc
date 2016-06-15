@@ -38,7 +38,7 @@ imap ii <Esc>
 nmap ; :
 let mapleader=","
 " source $MYVIMRC reloads the saved $MYVIMRC
-:nmap <Leader>s :source $MYVIMRC
+nmap <Leader>s :source $MYVIMRC
 
 " opens $MYVIMRC for editing, or use :tabedit $MYVIMRC
 nmap <Leader>v :e $MYVIMRC
